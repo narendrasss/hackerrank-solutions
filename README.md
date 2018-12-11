@@ -8,6 +8,6 @@ All solutions are accompanied by tests done using the [jest](https://jestjs.io/)
 
 After cloning the repository, the tests can be completed by simply running:
 
-```
+```bash
 $ npm test
 ```
