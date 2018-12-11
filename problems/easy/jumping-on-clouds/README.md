@@ -6,4 +6,4 @@ For each game, Emma will get an array of clouds numbered 0 if they are safe or 1
 
 ---
 
-*All credit for problems goes to [hackerrank.com]*
+*All credit for problems goes to [hackerrank.com](https://www.hackerrank.com)*

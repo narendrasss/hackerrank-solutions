@@ -8,4 +8,4 @@ For example, if the string `s = 'abcac'` and `n = 10`, the substring we consider
 
 ---
 
-*All credit for problems goes to [hackerrank.com]*
+*All credit for problems goes to [hackerrank.com](https://www.hackerrank.com)*
