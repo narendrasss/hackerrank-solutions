@@ -1,5 +1,9 @@
 'use strict'
 
+/**
+ * @param {String[]} clouds 
+ * @returns {Number}
+ */
 function jumpingOnClouds(clouds) {
     let pos = 0;
     let jumps = 0;
