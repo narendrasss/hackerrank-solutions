@@ -13,7 +13,7 @@ function hourglassSum(arr) {
 
 /**
  * Returns an array of all the hourglasses in arr.
- * @param {*} arr 
+ * @param {Number[][]} arr 
  * @returns {Number[][]}
  */
 function getAllHourglasses(arr) {
@@ -37,7 +37,7 @@ function getAllHourglasses(arr) {
  * @returns {Number}
  */
 function getSum(hourglass) {
-    return hourglass.reduce((acc, num) => acc += num);
+    return hourglass.reduce((acc, num) => acc + num);
 }
 
 module.exports = hourglassSum;
