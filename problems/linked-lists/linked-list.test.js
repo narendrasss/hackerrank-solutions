@@ -16,5 +16,5 @@ test("Should correctly print string", () => {
 test("Should remove 2 from list", () => {
   const removed = list.pop();
   expect(removed.data).toBe(2);
-  expect(list.size).toBe(1);
+  expect(list.size()).toBe(1);
 });

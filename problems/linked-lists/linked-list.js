@@ -52,6 +52,16 @@ class LinkedList {
     }
     return result;
   }
+
+  toArray() {
+    let result = [];
+    let curr = this.head;
+    while (curr) {
+      result.push(curr);
+      curr = curr.next;
+    }
+    return result;
+  }
 }
 
 module.exports = LinkedList;
