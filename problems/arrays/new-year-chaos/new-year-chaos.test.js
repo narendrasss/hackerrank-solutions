@@ -1,10 +1,10 @@
-'use strict'
+"use strict";
 
-const minimumBribes = require('./new-year-chaos');
+const minimumBribes = require("./new-year-chaos");
 
-const ex1 = [2,1,5,3,4];
-const ex2 = [2,5,1,3,4];
-const ex3 = [1,2,5,3,7,8,6,4];
+const ex1 = [2, 1, 5, 3, 4];
+const ex2 = [2, 5, 1, 3, 4];
+const ex3 = [1, 2, 5, 3, 7, 8, 6, 4];
 
 /*
 test('Example 1 has 3 minimum bribes', () => {

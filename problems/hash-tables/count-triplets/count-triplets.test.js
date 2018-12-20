@@ -1,3 +1,3 @@
-'use strict'
+"use strict";
 
-const hasCommonSubstring = require('./count-triplets');
+const hasCommonSubstring = require("./count-triplets");

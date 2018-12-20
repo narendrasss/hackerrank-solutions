@@ -1,14 +1,12 @@
-'use strict'
+"use strict";
 
 /**
  * A bracket is one of the following characters: (, {, [.
  * Given a sequence of brackets, determine if all brackets
  * in the sequence are balanced.
- * @param {String[]} s 
+ * @param {String[]} s
  * @returns {Boolean}
  */
-function isBalanced(s) {
-
-}
+function isBalanced(s) {}
 
 module.exports = isBalanced;

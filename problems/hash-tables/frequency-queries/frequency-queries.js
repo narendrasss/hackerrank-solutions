@@ -1,6 +1,6 @@
-'use strict'
+"use strict";
 
-const HashTable = require('../hash-table');
+const HashTable = require("../hash-table");
 
 /**
  * You are given an array of queries. Each query is a two-integer
@@ -11,11 +11,9 @@ const HashTable = require('../hash-table');
  *                  in the data structure
  * The function below should print an array of the corresponding
  * result(s) based on the given queries.
- * @param {Number[][]} queries 
+ * @param {Number[][]} queries
  * @returns {Number[]}
  */
-function freqQuery(queries) {
-
-}
+function freqQuery(queries) {}
 
 module.exports = freqQuery;

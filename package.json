@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "format": "prettier --write \"problems/**/*.{js,jsx}\"",
     "lint": "eslint **/*.{js,jsx} --quiet"
   },
   "repository": {
