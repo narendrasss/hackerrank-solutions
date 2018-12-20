@@ -10,13 +10,28 @@ const HashTable = require('../hash-table');
  * @returns {Boolean}
  */
 function checkMagazine(magazine, note) {
+    /*
+    let dict = {};
+    magazine.forEach(word => {
+        if (!dict[word]) {
+            dict[word] = 1;
+        } else dict[word]++;
+    });
+
+    for (let i = 0; i < note.length; i++) {
+        const word = note[i];
+        if (!dict[word] || dict[word] < 1) return false;
+        dict[word]--;
+    }
+    */
     const table = new HashTable(magazine.length * 2);
     table.add(...magazine);
 
-    note.forEach(word => {
+    for (let i = 0; i < note.length; i++) {
+        const word = note[i];
         if (!table.contains(word)) return false;
         table.remove(word);
-    });
+    }
 
     return true;
 }
