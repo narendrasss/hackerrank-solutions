@@ -40,6 +40,10 @@ class HashTable {
         return bucket.filter(el => el === str).length > 0;
     }
 
+    /**
+     * This is the same algorithm as Java's String.hashCode(),
+     * adjusted to return an index within the hash table's size.
+     */
     hash(str, limit) {
         let hash = 0;
         for (let i = 0; i < str.length; i++) {
