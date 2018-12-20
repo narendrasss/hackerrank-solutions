@@ -22,15 +22,19 @@ function minimumBribes(q) {
     if (!checkPossible(q)) return 'Too chaotic';
 
     let numBribes = 0;
-    for (let i = 0; i < q.length - 1; i++) {
-        for (let k = 0; k < q.length - i - 1; k++) {
-            if (q[k] > q[k + 1]) {
-                swap(q, k, k + 1);
-                numBribes++;
-            }
+    let fixed = 0;
+    let i = q.length - 1;
+    while (fixed != q.length) {
+        const jumps = q[i] - i - 1;
+        if (jumps >= 0) {
+            shift(q, i, jumps);
+            numBribes += jumps;
+            fixed++;
+            i = q.length - fixed - 1;
         }
+        i--;
     }
-    return numBribes;
+    return q;
 }
 
 /**
@@ -42,16 +46,20 @@ function checkPossible(q) {
     return q.filter((el, i) => el - i > 3).length == 0;
 }
 
-/**
- * Swaps the elements at indices i and j.
- * @param {Number[]} q 
- * @param {Number} i 
- * @param {Number} j 
- */
-function swap(q, i, j) {
+function getMismatch(q) {
+    for (let i = q.length - 1; i > -1; i--) {
+        const jumps = q[i] - i - 1;
+        if (jumps > 0) return i;
+    }
+    return -1;
+}
+
+function shift(q, i, n) {
     const temp = q[i];
-    q[i] = q[j];
-    q[j] = temp;
+    for (let k = 0; k < n; k++) {
+        q[i + k] = q[i + k + 1];
+    }
+    q[i + n] = temp;
 }
 
 module.exports = minimumBribes;
